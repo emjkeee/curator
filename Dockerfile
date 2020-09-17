@@ -8,4 +8,4 @@ RUN apk add bash
 
 RUN pip3 install -U elasticsearch-curator
 
-CMD ["curator", "--config", "/etc/curator/curator.yml" "/etc/curator/action.yml"]
+CMD ["/usr/local/bin/curator", "config", "/etc/curator/curator.yml", "/etc/curator/action.yml"]
